@@ -14,23 +14,21 @@ public class Main {
 			System.out.println("Kurs adý : " +course.name);
 		}
 		
-		Teacher teacher1=new Teacher(1, "Engin Demiroð", "Microsoft Certified Trainer (MCT) ,PMP ve ITIL... ");
-		Teacher teacher2=new Teacher(2, "Salih Demiroð", "... ");
+		Instructor instructor1 =new Instructor(1, "Engin", "Demiroð", "engin@engin.com", "MCT ,PMP ve ITIL ...");
+		Instructor instructor2 =new Instructor(2, "Salih", "Demiroð", "salih@salih.com", "MCT  ve ITIL ...");
 		
-		Teacher[] teachers= {teacher1,teacher2};
+		InstructorManager manager=new InstructorManager();
+		manager.add(instructor1);
+		manager.add(instructor2);
 		
-		for (Teacher teacher : teachers) {
-			System.out.println("Eðitimci adý : " + teacher.name);
-		}
+
+		Student student1=new Student(1, "Melih", "Ateþ","melih@melih.com","AAA");
+		Student student2=new Student(2, "Salih", "Ateþ","-","BBC");
 		
-		Student student1=new Student(1, "Melih Ateþ");
-		Student student2=new Student(2, "Salih Ateþ");
+		StudentManager manager2=new StudentManager();
 		
-		Student[] students= {student1,student2};
-		
-		for (Student student : students) {
-			System.out.println("Öðrenci adý : "+ student.name);
-		}
+		manager2.add(student1);
+		manager2.add(student2);
 		
 		
 		

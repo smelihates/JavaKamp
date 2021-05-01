@@ -1,12 +1,13 @@
 package javaKamp;
 
-public class Student {
-
-	public Student(int id, String name) {
-		this.id=id;
-		this.name=name;
-				
+public class Student extends User {
+	String schoolName;
+	
+	public Student(int id, String firstName, String lastName, String email, String schoolName) {
+		super(id, firstName, lastName, email);
+		this.schoolName=schoolName;
 	}
-	int id;
-	String name;
+
+	
+
 }

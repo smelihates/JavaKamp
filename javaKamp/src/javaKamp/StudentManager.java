@@ -1,13 +1,17 @@
 package javaKamp;
 
-public class StudentManager {
+public class StudentManager extends UserManager{
 
-	public void addToStudent(Student student) {
-		System.out.println(student.name +" isimli öðrenci kaydý oluþturuldu.");
+	public void add(Student student) {
+		System.out.println(student.firstName + " isimli öðrenci kaydý oluþturuldu.");
 	}
 	
-	public void updateToStudent(Student student) {
-		System.out.println(student.name +" isimli öðrenci kaydý güncellendi.");
-		
+	public void update(Student student) {
+		System.out.println(student.firstName + " isimli öðrenci kaydý güncellendi.");
 	}
+	
+	public void delete(Student student) {
+		System.out.println(student.firstName + " isimli öðrenci kaydý silindi.");
+	}
+	
 }
